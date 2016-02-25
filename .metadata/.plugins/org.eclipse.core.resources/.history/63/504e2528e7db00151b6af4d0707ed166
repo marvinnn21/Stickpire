@@ -1,0 +1,9 @@
+package stickpire;
+
+public abstract class Fernkaempfer extends Figur {
+
+	public Fernkaempfer(String name, int leben, int angriff, int angriffsrate, int geschwindigkeit) {
+		super(name, leben, angriff, angriffsrate, geschwindigkeit);
+	}
+
+}

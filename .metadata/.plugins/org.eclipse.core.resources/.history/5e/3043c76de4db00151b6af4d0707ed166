@@ -1,0 +1,71 @@
+package stickpier;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.Toolkit;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+
+public class spiel extends JFrame {
+    
+	//Stickmans
+	private ImageIcon stickman = new ImageIcon("sticks/stickman.gif");
+	private ImageIcon stickmanangrif = new ImageIcon("sticks/stickmanangrif.gif");
+	private ImageIcon stickmandeath = new ImageIcon("sticks/stickmandeath.gif");
+	
+	//Pannels
+	private JPanel contentPane;
+	
+	//Größe
+	private int xAchse = Toolkit.getDefaultToolkit().getScreenSize().width;
+	private int yAchse = Toolkit.getDefaultToolkit().getScreenSize().height;
+	private int breite = Toolkit.getDefaultToolkit().getScreenSize().width / 100;
+	private int höhe = Toolkit.getDefaultToolkit().getScreenSize().height / 100;
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					spiel frame = new spiel();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public spiel() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 490, 360);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		this.setBounds(0, 0, this.xAchse, this.yAchse);
+		JLabel lblNewLabel = new JLabel(this.stickman);
+		lblNewLabel.setBounds(0, 0, 200, 200);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel(this.stickmanangrif);
+		lblNewLabel_1.setBounds(200, 0, 200, 200);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel(this.stickmandeath);
+		lblNewLabel_2.setBounds(400, 0, 300, 200);
+		contentPane.add(lblNewLabel_2);
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,9 @@
+package stickpire;
+
+public class Nahkaempfer extends Figur {
+
+	public Nahkaempfer(String name, int leben, int geschwindigkeit, int angriff, int angriffsrate) {
+		super(name, leben, geschwindigkeit, angriff, angriffsrate);
+	}
+
+}

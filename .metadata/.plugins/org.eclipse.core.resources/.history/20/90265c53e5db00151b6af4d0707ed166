@@ -1,0 +1,10 @@
+package stickpire;
+
+public abstract class Fernkaempfer extends Figur {
+
+	public Fernkaempfer(String name, int leben, int angriff, int geschwindigkeit) {
+		super(name, leben, angriff, geschwindigkeit);
+		// TODO Auto-generated constructor stub
+	}
+
+}
