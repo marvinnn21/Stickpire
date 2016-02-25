@@ -1,0 +1,30 @@
+package stickpier;
+
+public abstract class Figur {
+	private int leben, angriff, geschwindigkeit;
+	private String name;
+	
+	public Figur(String name, int leben, int angriff, int geschwindigkeit){
+	  this.
+	}
+
+	public int getLeben() {
+		return leben;
+	}
+
+	public void setLeben(int leben) {
+		this.leben = leben;
+	}
+
+	public int getAngriff() {
+		return angriff;
+	}
+
+	public int getGeschwindigkeit() {
+		return geschwindigkeit;
+	}
+
+	public String getName() {
+		return name;
+	}
+}

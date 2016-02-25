@@ -1,0 +1,38 @@
+package stickpire;
+
+public abstract class Figur {
+	private int leben, angriff, angriffsrate, geschwindigkeit;
+	private String name;
+
+	public Figur(String name, int leben, int angriff, int angriffsrate, int geschwindigkeit) {
+		this.name = name;
+		this.setLeben(leben);
+		this.angriff = angriff;
+		this.angriffsrate = angriffsrate;
+		this.geschwindigkeit = geschwindigkeit;
+	}
+
+	public int getLeben() {
+		return leben;
+	}
+
+	public void setLeben(int leben) {
+		this.leben = leben;
+	}
+
+	public int getAngriff() {
+		return angriff;
+	}
+
+	public int getAngriffsrate() {
+		return this.angriffsrate;
+	}
+
+	public int getGeschwindigkeit() {
+		return geschwindigkeit;
+	}
+
+	public String getName() {
+		return name;
+	}
+}
