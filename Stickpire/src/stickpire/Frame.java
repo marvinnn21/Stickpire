@@ -58,7 +58,7 @@ public class Frame extends JFrame {
 		contentPane.setLayout(null);
 		this.setBounds(0, 0, this.xAchse, this.yAchse);
 		JLabel lblNewLabel = new JLabel(this.stickman);
-		lblNewLabel.setBounds(0, 0, 200, 200);
+		lblNewLabel.setBounds(0, 0, 250, 200);
 		contentPane.add(lblNewLabel);
 		
 		
